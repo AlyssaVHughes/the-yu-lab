@@ -1,4 +1,54 @@
-body { 
+body {   
     margin: 0;
-    background-color:blue;
+    background-color: #EFEFEF;
+}
+
+.hero-section { 
+    background-image: url("../images/homepage/background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-card {
+    margin-left: 40%;
+    margin-top: 30%;
+    background-color: aqua;
+    width: 40vw;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.hero-title {
+    font-family: "halyard-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    color: #000;
+    margin: 30px;
+}
+
+.hero-subtitle {
+    font-family: "halyard-display",sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5vw, 1.7rem);
+    color: #000;
+    margin: 30px;
+}
+
+.hero-button {
+    font-family: "halyard-display",sans-serif;
+    font-weight: 400;
+    font-size: clamp(.7rem, 1.5vw, 1.1rem);
+    color: #ffffff;
+    background-color: #000000;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.hero-button:hover {
+    background-color: #333333;
 }
