@@ -8,93 +8,66 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../CSS/home.css">
   <link rel="stylesheet" href="https://use.typekit.net/sru2qmz.css">
-  <link rel="stylesheet" href="CSS/components/navigation.css">
+  <link rel="stylesheet" href="../CSS/components/navigation.css">
 </head>
 
 <body>
  
-    <!-- <div class="navigation-container">
+    <div class="navigation-container">
 
     <div class="nav-bar">
 
       <div class="left-nav">
 
-        <div class="nav-buttons">
+        <div class="logo">
+          <img class="logo-image" src="../Images/homepage/scripps logo ratchet.png" alt="Scripps Logo" />
+        </div>
+      </div>
+
+      <div class="right-nav"> 
+
+                <nav>
+          <ul class="nav-links">
+            <li class="nav-item"><a href="home.html">About</a> </li>
+            <li class="nav-item"><a href="Opinion.html">Research</a></li>
+            <li class="nav-item"><a href="reviews.html">Publications</a></li>
+            <li class="nav-item"><a href="features.html">Members</a></li>
+          </ul>
+
+        </nav>
+
+              <div class="nav-buttons">
 
           <div class="menu">
             <button id="menuBtn" class="menu-btn">
-              <img id="menuIcon" class="menu-icon" src="Images/Icons/Menu_Icon.png" alt="Menu Icon" />
+              <i class="fa-solid fa-bars"></i>
             </button>
 
             <div id="dropdown" class= menu-nav-wrapper>
               <ul class="menu-nav-links">
-                <li class="menu-nav-item"> <a href="home.html">TRENDING</a></li>
-                <li class="menu-nav-item"> <a href="Opinion.html">OPINION</a> </li>
-                <li class="menu-nav-item"> <a href="reviews.html">TECHNOLOGY</a> </li>
-                <li class="menu-nav-item"> <a href="features.html">COMMUNITY</a> </li>
-                <li class="menu-nav-item"> <a href="features.html">TUTORIALS</a> </li>
-                <li class="menu-nav-item"> <a href="features.html">NEWS</a> </li>
+                <li class="menu-nav-item"> <a href="home.html">About</a></li>
+                <li class="menu-nav-item"> <a href="Opinion.html">Research</a> </li>
+                <li class="menu-nav-item"> <a href="reviews.html">Publications</a> </li>
+                <li class="menu-nav-item"> <a href="features.html">Members</a> </li>
               </ul>
             </div>
 
           </div>
-
-          <div class="search">
-            <button class ="search-btn">
-              <img class="search-icon" src="Images/Icons/Search.png" alt="Search Icon" />
-            </button>
-            <input type="text" class="search-input" placeholder="Search..." />
-          </div>
-
       </div>
 
-        <div class="logo">
-          <img class="logo-image" src="Images/Decorative/Logo.png" alt="GameOn Logo" /><img class="logo-image-hover" src="Images/Decorative/Logo_Filled.png" alt="GameOn Logo Hover" />
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li class="nav-item"><a href="home.html">TRENDING</a> </li>
-            <li class="nav-item"><a href="Opinion.html">OPINION</a></li>
-            <li class="nav-item"><a href="reviews.html">TECHNOLOGY</a></li>
-            <li class="nav-item"><a href="features.html">COMMUNITY</a></li>
-            <li class="nav-item"><a href="about.html">TUTORIALS</a></li>
-            <li class="nav-item"><a href="news.html">NEWS</a></li>
-          </ul>
-
-        </nav>
-      </div>
-
-      <div class="right-nav">
-
-        <div class="button-wrapper">
-          <button class="sub-button" id="SubBtn">Subscribe</button>
-          <canvas id="burstCanvas2" width="261" height="221"></canvas>
-        </div>
-        <div class="profile">
-
-          <button class=profile-btn> <img class="profile-image" src="Images/Icons/Profile.png" alt="Profile Icon" />  </button>
-          <div class= sub-nav-wrapper>
-            <ul class="sub-nav-links">
-              <li class="sub-nav-item"> <img src="Images/Icons/SignIn.png" class="sub-nav-img"> <img src="Images/Icons/SignIn_Hover.png" class="sub-nav-img hover"> <a href="home.html">Sign In</a></li>
-              <li class="sub-nav-item"> <img src="Images/Icons/EditProf.png" class="sub-nav-img"> <img src="Images/Icons/EditProf_Hover.png" class="sub-nav-img hover"> <a href="news.html">Edit Profile</a> </li>
-              <li class="sub-nav-item"> <img src="Images/Icons/Settings.png" class="sub-nav-img"> <img src="Images/Icons/Settings_Hover.png" class="sub-nav-img hover"> <a href="reviews.html">Settings & Privacy</a> </li>
-              <li class="sub-nav-item"> <img src="Images/Icons/Help.png" class="sub-nav-img"> <img src="Images/Icons/Help_Hover.png" class="sub-nav-img hover"> <a href="features.html">Help & Support</a> </li>
-              <li class="sub-nav-item"> <img src="Images/Icons/SignOut.png" class="sub-nav-img"> <img src="Images/Icons/SignOut_Hover.png" class="sub-nav-img hover"> <a href="features.html">Sign Out</a> </li>
-            </ul>
-          </div>
-
-        </div>
       </div>
 
     </div>
 
-  </div> -->
+  </div>
 
   <div class ="hero-section">
-    <div class="hero-card">
-      <h1 class="hero-title">The Yu Lab</h1>
-      <p class="hero-subtitle">A unified approach to C -H activation that addresses the core challenges of reactivity, enantioselectivity, site - selectivity, and sustainability through innovative catalyst and ligand design.</p>
-      <button class="hero-button">About <i class="fa-solid fa-arrow-right"></i> </button>
+    <div class="hero-content"> 
+      <div class="hero-card">
+        <h1 class="hero-title">The Yu Lab</h1>
+        <p class="hero-subtitle">A unified approach to C -H activation that addresses the core challenges of reactivity, enantioselectivity, site - selectivity, and sustainability through innovative catalyst and ligand design.</p>
+        <button class="hero-button">About <i class="fa-solid fa-arrow-right"></i> </button>
+      </div>
     </div>
   </div>
 

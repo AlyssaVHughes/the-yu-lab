@@ -4,16 +4,50 @@ body {
 }
 
 .hero-section { 
-    background-image: url("../images/homepage/background.svg");
-    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/homepage/background1.svg");
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+}
+
+/* .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../images/homepage/background1.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(10px);
+    transform: scale(1.05);
+    z-index: -1; 
+} */
+
+.hero-content {
+    padding-top: 20%;
+}
+
 .hero-card {
     margin-left: 40%;
-    margin-top: 30%;
-    background-color: aqua;
+    background-color: rgba(255, 255, 255, 0.065);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.4);
+    border-left: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
     width: 40vw;
     padding: 30px;
     border-radius: 30px;
@@ -51,4 +85,30 @@ body {
 
 .hero-button:hover {
     background-color: #333333;
+}
+
+    @media (max-width: 600px) {
+
+    .hero-content { 
+        padding-left: 5%;
+        padding-right:5%;
+    }   
+        
+    .hero-card {
+        margin-left: 0;
+        width: 85%;
+    }
+
+    .hero-title {
+    margin: 15px;
+}
+
+.hero-subtitle {
+    margin: 15px;
+}
+
+.hero-button {
+    margin: 15px;
+}
+
 }
