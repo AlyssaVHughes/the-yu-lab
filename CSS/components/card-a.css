@@ -1,0 +1,34 @@
+.cards-a-container {
+    display: flex;
+    gap: clamp(1rem, 2vw, 2rem);
+    justify-content: center;
+    margin: clamp(1rem, 2vw, 2rem);
+    margin-block: clamp(4rem, 5vw, 6rem);
+}
+
+.card-area {
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+/* this is probably going to change */
+.card-image { 
+    width: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+
+.card-area { 
+    flex-direction: column;
+    gap: 25px;
+}   
+
+.card-image { 
+    width: 100%;
+    object-fit: cover;
+}
+}
