@@ -1,0 +1,35 @@
+.card-c-area {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: clamp(4rem, 5vw, 6rem);
+}
+
+.card-c-image{
+    object-fit: cover;
+    height: auto;
+    width: 50%;
+}
+
+.card-c-text-area {
+    width: 50%;
+}  
+
+@media (max-width: 1000px) {
+    .card-c-area {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-c-text-area {
+    width: 95%;
+    padding:10px;
+    }  
+
+    .card-c-image{
+    width: 100%;
+    }
+
+}

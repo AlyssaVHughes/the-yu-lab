@@ -1,0 +1,86 @@
+.cards-b-container {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    gap: clamp(1rem, 5vw, 3rem);
+    justify-content: center;
+    margin-inline: auto;
+    margin-block: clamp(4rem, 5vw, 6rem);
+}
+
+.card-b-area {
+    /* height: 30vw; */
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    border: rgba(127, 143, 96, 1) 1px solid;
+    display:flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.card-b-top {
+    font-family: "halyard-display",sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(.3rem, .5rem + 1vw, 1rem);
+    line-height: 1.1;
+    color: #000000;
+    margin: 5%;
+    width: 60%;
+}
+
+.card-b-center {
+    font-family: "halyard-display",sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(.8rem, .6rem + 1vw, 1.5rem);
+    line-height: 1.1;
+    color: #000000;
+    margin-inline: 15%;
+}
+
+.card-b-bottom {
+    font-family: "halyard-display",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(.5rem, .2rem + 1vw, 1rem);
+    line-height: 1.1;
+    color: #000000;
+    margin: 5%;
+}
+
+@media (max-width: 725px) {
+
+.cards-b-container {
+    flex-direction: column;
+    width: 70%;
+    gap: 40px;
+}
+
+.card-b-area {
+    /* height: 85vw; */
+    min-height: 350px;
+    width: 100%;
+}
+
+.card-b-top {
+    font-size: clamp(.2rem, .7rem + 1vw, 2rem);
+}
+
+.card-b-center {
+    font-size: clamp(.7rem, 1.1rem + .5vw, 1.8rem);
+}
+
+.card-b-bottom {
+    font-size: clamp(.7rem, .2rem + 1vw, 1rem);
+}
+
+}
+
+@media (max-width: 280px) {
+.cards-b-container {
+    width: 75%;
+}
+}
