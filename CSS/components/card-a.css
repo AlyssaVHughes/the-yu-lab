@@ -1,13 +1,15 @@
 .cards-a-container {
     display: flex;
-    gap: clamp(1rem, 2vw, 2rem);
+    width: 80%;
+    flex-direction: column;
+    gap: clamp(2rem, 5vw, 5rem);
     justify-content: center;
-    margin: clamp(1rem, 2vw, 2rem);
+    margin-inline: auto;
     margin-block: clamp(4rem, 5vw, 6rem);
 }
 
-.card-area {
-    width: 90%;
+.card-a-area {
+    width: 100%;
     max-width: 1300px;
     display: flex;
     flex-direction: row;
@@ -15,19 +17,23 @@
 }
 
 /* this is probably going to change */
-.card-image { 
+.card-a-image { 
     width: 50%;
     object-fit: cover;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 725px) {
 
-.card-area { 
+.cards-a-container {
+    gap: 40px;
+}
+
+.card-a-area { 
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
 }   
 
-.card-image { 
+.card-a-image { 
     width: 100%;
     object-fit: cover;
 }
